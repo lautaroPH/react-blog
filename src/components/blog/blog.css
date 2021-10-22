@@ -1,0 +1,244 @@
+.box-container {
+    margin-top: 30px;
+    height: 100%;
+    padding: 50px 35px 35px 35px;
+    border-radius: 30px;
+    background: #ebf0f3;
+    box-shadow: 10px 10px 20px #cbced1, -10px -10px 20px #ffffff;
+    overflow: hidden;
+}
+
+.infinite-scroll-component {
+    overflow: hidden !important;
+}
+
+:root {
+    --animate-delay: 0.7s;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.subtitulo {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 7px;
+    letter-spacing: 3px;
+}
+
+.posts-box {
+    margin-top: 20px;
+    width: auto;
+    padding: 20px;
+    height: 100%;
+    border-radius: 20px;
+    background: #ebf0f3;
+    box-shadow: inset 5px 5px 31px #a3aaa9, inset -5px -5px 31px #ffffff;
+    overflow: hidden;
+}
+
+.post-user-date {
+    color: #666;
+}
+
+.post-description {
+    text-align: justify;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    max-height: 100px;
+}
+
+.post-link {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 170px;
+    height: 50px;
+    font-size: 22px;
+    font-weight: 500;
+    background: #e0e1e6;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px #b1b1b1, -5px -5px 10px #ffffff;
+    transition: 0.5s;
+}
+
+.post-link:hover {
+    background: #cbccce;
+}
+
+.post-link:active {
+    background: #e0e1e6;
+}
+
+#texto {
+    padding-top: 5px;
+    color: #fff;
+    user-select: none;
+    cursor: pointer;
+}
+
+.div_file {
+    position: relative;
+    width: 200px;
+    background-color: #2499e3;
+    border-radius: 5px;
+    box-shadow: 0px 3px 0px #1a71a9;
+    height: 33px;
+    text-align: center;
+}
+
+.file_btn {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+    opacity: 0;
+}
+
+.div_file:hover {
+    background-color: #166fa7;
+}
+
+.img-new-post {
+    height: 200px;
+    width: 400px;
+    margin-top: 20px;
+}
+
+.img-post {
+    height: 420px;
+    width: 60%;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 12px;
+}
+
+.p-post-one {
+    font-size: 18px;
+}
+
+.description {
+    text-align: justify;
+}
+
+.ReactModalPortal>div {
+    opacity: 0;
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: opacity .2s ease-in-out;
+    z-index: 999;
+}
+
+.modal-fondo {
+    background-color: rgba(0, 0, 0, 0.3);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: fixed;
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+    opacity: 1;
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+    opacity: 0;
+}
+
+.modal {
+    background: white;
+    border-radius: 5px;
+    color: rgb(51, 51, 51);
+    display: inline;
+    max-height: 820px;
+    max-width: 700px;
+    outline: none;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.modal-delete {
+    background: white;
+    border-radius: 5px;
+    color: rgb(51, 51, 51);
+    max-height: 820px;
+    max-width: 400px;
+    display: inline;
+    outline: none;
+    padding: 10px;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+.textarea {
+    resize: none;
+}
+
+.newPost {
+    color: #2499e3;
+    cursor: pointer;
+}
+
+.newPost:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 991px) {
+    .img-post {
+        height: 420px;
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .description {
+        overflow: visible;
+    }
+}
+
+@media (max-width: 767px) {
+    .date{
+        margin-left: -5px !important;
+    }
+}
+
+@media (max-width: 454px) {
+    .img-new-post{
+        height: 180px;
+        width: 300px;
+    }
+}
+
+@media (max-width: 403px) {
+    .r-responsive{
+        display: block !important
+    }
+
+    .date{
+        margin-left: 10px !important;
+    }
+
+    .buton-left-margin{
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 350px) {
+    .img-new-post{
+        height: 180px;
+        width: 200px;
+    }
+}
