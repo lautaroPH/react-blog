@@ -17,9 +17,9 @@ const BlogUser = () => {
 
     const history = useHistory();
 
-    const localStorageUserId = location.pathname.split("/")[2]
+    const localStorageUserId = location.pathname.split("/")[3]
     if (localStorageUserId) {
-        localStorage.setItem("userId", location.pathname.split("/")[2])
+        localStorage.setItem("userId", location.pathname.split("/")[3])
     }
 
     const userId = localStorage.getItem("userId") || ""

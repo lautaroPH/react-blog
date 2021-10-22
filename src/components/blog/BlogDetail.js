@@ -18,9 +18,9 @@ const BlogDetail = () => {
 
     const location = useLocation()
 
-    const localStoragePostId = location.pathname.split("/")[2]
+    const localStoragePostId = location.pathname.split("/")[3]
     if (localStoragePostId) {
-        localStorage.setItem("postId", location.pathname.split("/")[2])
+        localStorage.setItem("postId", location.pathname.split("/")[3])
     }
 
     const history = useHistory()
