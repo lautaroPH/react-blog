@@ -12,12 +12,12 @@ const BlogRoutes = () => {
             <Navbar />
             <Switch >
 
-                <Route exact path="/" component={BlogScreen} />
-                <Route exact path="/post/:id" component={BlogDetail} />
-                <Route exact path="/perfil/:id" component={BlogUser} />
-                <Route exact path="/buscar" component={BlogSearch} />
+                <Route exact path="/react-blog/" component={BlogScreen} />
+                <Route exact path="/react-blog/post/:id" component={BlogDetail} />
+                <Route exact path="/react-blog/perfil/:id" component={BlogUser} />
+                <Route exact path="/react-blog/buscar" component={BlogSearch} />
 
-                <Redirect to="/" />
+                <Redirect to="/react-blog/" />
 
             </Switch>
             <Footer />

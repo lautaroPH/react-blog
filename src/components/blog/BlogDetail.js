@@ -41,7 +41,7 @@ const BlogDetail = () => {
 
 
     if (!activePostloading) {
-        history.push("/");
+        history.push("/react-blog/");
     }
 
     const postDate = moment(activePost?.created_at);
@@ -59,7 +59,7 @@ const BlogDetail = () => {
     }
 
     const handleUser = () => {
-        history.push(`/perfil/${activePost.user._id}`)
+        history.push(`/react-blog/perfil/${activePost.user._id}`)
     }
 
     // const handleOpenModalComment = () => {

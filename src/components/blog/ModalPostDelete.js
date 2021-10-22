@@ -34,7 +34,7 @@ const ModalPostDelete = () => {
             dispatch(commentStartDelete())
         } else {
             dispatch(postStartDelete())
-            history.push("/");
+            history.push("/react-blog/");
         }
         dispatch(uiCloseDeleteModal())
     }

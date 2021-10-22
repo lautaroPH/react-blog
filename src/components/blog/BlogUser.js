@@ -46,7 +46,7 @@ const BlogUser = () => {
     }, [dispatch])
 
     if (!activePostloading) {
-        history.push("/");
+        history.push("/react-blog/");
         Swal.fire("Error", "No existe el usuario buscado", "error");
     }
 

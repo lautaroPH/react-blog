@@ -65,7 +65,7 @@ const LoginScreen = () => {
 
 
                     <div className="link">
-                        <Link to="/auth/register">Registrar</Link>
+                        <Link to="/react-blog/auth/register">Registrar</Link>
                     </div>
                 </div>
             </div >

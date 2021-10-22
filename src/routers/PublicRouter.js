@@ -14,7 +14,7 @@ export const PublicRouter = ({
         <Route { ...rest }
             component={ (props) => (
                 ( isAuthenticated )
-                    ? ( <Redirect to="/" /> )
+                    ? ( <Redirect to="/react-blog/" /> )
                     : ( <Component { ...props } /> )
             )}
         

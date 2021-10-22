@@ -26,7 +26,7 @@ const Navbar = () => {
 
     const handleSearch = (e) => {
         e.preventDefault();
-        history.push(`/buscar?q=${searchText}`)
+        history.push(`/react-blog/buscar?q=${searchText}`)
     }
 
     const handleLogout = () => {
@@ -36,7 +36,7 @@ const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
 
-            <Link className="navbar-brand" to="/" onClick={() => dispatch(postDeleteStore())}>Blog-react</Link>
+            <Link className="navbar-brand" to="/react-blog/" onClick={() => dispatch(postDeleteStore())}>Blog-react</Link>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon" />
             </button>
@@ -64,7 +64,7 @@ const Navbar = () => {
                             {name} {surname}
                         </span>
                         <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <Link className="dropdown-item" to={`/perfil/${uid}`}>Mis posts</Link>
+                            <Link className="dropdown-item" to={`/react-blog/perfil/${uid}`}>Mis posts</Link>
                             <div className="dropdown-divider"></div>
                             <span className="dropdown-item btn text-danger" onClick={handleLogout}>
                                 <i className="fas fa-sign-out-alt"></i>

@@ -41,7 +41,7 @@ const BlogSearch = () => {
 
     useEffect(() => {
         if (!search) {
-            history.push("/")
+            history.push("/react-blog/")
         }
     }, [search, history])
 

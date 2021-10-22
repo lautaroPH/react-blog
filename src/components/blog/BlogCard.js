@@ -17,7 +17,7 @@ const BlogCard = ({
             <h2 >{title}</h2>
             <p className="post-user-date">{user.name} {user.surname} - {postDate.format("Do MMMM YYYY")}</p>
             <p className="post-description">{description}</p>
-            <Link to={`/post/${id}`} className="post-link btn" >Leer más</Link>
+            <Link to={`/react-blog/post/${id}`} className="post-link btn" >Leer más</Link>
         </div>
     )
 }

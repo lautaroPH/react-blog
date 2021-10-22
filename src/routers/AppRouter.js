@@ -28,13 +28,13 @@ const AppRouter = () => {
         <Router>
             <Switch>
                 <PublicRouter
-                    path="/auth"
+                    path="/react-blog/auth"
                     component={AuthRoutes}
                     isAuthenticated={!!uid}
                 />
 
                 <PrivateRouter
-                    path="/"
+                    path="/react-blog/"
                     component={BlogRoutes}
                     isAuthenticated={!!uid}
                 />

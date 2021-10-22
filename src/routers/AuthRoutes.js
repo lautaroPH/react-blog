@@ -6,10 +6,10 @@ const AuthRoutes = () => {
     return (
 
         <Switch >
-            <Route exact path="/auth/login" component={LoginScreen} />
-            <Route exact path="/auth/register" component={RegisterScreen} />
+            <Route exact path="/react-blog/auth/login" component={LoginScreen} />
+            <Route exact path="/react-blog/auth/register" component={RegisterScreen} />
 
-            <Redirect to="/auth/login" />
+            <Redirect to="/react-blog/auth/login" />
 
         </Switch>
     )

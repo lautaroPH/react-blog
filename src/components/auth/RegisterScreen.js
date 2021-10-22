@@ -112,7 +112,7 @@ const RegisterScreen = () => {
 
 
                     <div className="link">
-                        <Link to="/auth/login">Logueate</Link>
+                        <Link to="/react-blog/auth/login">Logueate</Link>
                     </div>
                 </div>
             </div >
